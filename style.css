@@ -1,0 +1,338 @@
+body{
+    background: #E5E5E5;
+}
+
+.container{
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+    background-color: black;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;   
+    align-items: center; 
+    padding: 0 15px 0 35px;
+}
+.header__left{    
+    color:#FFFFFF;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: normal;
+    font-size: 15px;    
+}
+
+.header_action{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_action__action img{
+    padding-left: 26px;
+}
+
+.story{   
+    position: relative;
+    height: 96px;
+    width: 410px;
+    left: 0;        
+}
+
+.story__friend p{
+    position: absolute;    
+}
+
+.story__friend img{
+    position: absolute;  
+}
+
+/* Позиционирование 1-ой иконки в сториз */
+
+.story__friend:first-child{     
+    top:0;
+    left:0;       
+}
+
+.story__friend:first-child > img:first-child{          
+    top:4px;
+    left:4px;          
+}
+.story__friend:first-child > img:nth-child(2){       
+    top:56px;
+    left:56px;      
+}
+
+.story__friend:first-child p{     
+    top:76px;
+    left:10px;       
+}
+
+/* Позиционирование 2-ой иконки в сториз */
+
+.story__friend:nth-child(2) > img:nth-child(1){       
+    top:2px;
+    left:84px;      
+}
+
+.story__friend:nth-child(2) > img:nth-child(2){       
+    top:4px;
+    left:86px;      
+}
+
+.story__friend:nth-child(2) > img:nth-child(3){       
+    top:67px;
+    left:108px;      
+}
+
+.story__friend:nth-child(2) p{     
+    top:76px;
+    left:100px;       
+}
+
+/* Позиционирование 3-ей иконки в сториз */
+
+.story__friend:nth-child(3) > img:first-child{       
+    top:2px;
+    left: 168px;     
+}
+
+.story__friend:nth-child(3) > img:nth-child(2){       
+    top:4px;
+    left:170px;      
+}
+
+.story__friend:nth-child(3) p{     
+    top:76px;
+    left: 175px;       
+}
+
+/* Позиционирование 4-ой иконки в сториз */
+
+.story__friend:nth-child(4) > img:first-child{       
+    top:2px;
+    left: 252px;     
+}
+
+.story__friend:nth-child(4) > img:nth-child(2){       
+    top:4px;
+    left:254px;      
+}
+
+.story__friend:nth-child(4) p{     
+    top:76px;
+    left:262px;       
+}
+
+/* Позиционирование 5-ой иконки в сториз */
+
+.story__friend:nth-child(5) > img:first-child{       
+    top:2px;
+    left: 336px;    
+}
+
+.story__friend:nth-child(5) > img:nth-child(2){       
+    top:4px;
+    left:338px;      
+}
+
+.story__friend:nth-child(5) p{     
+    top:76px;
+    left:344px;       
+}
+
+.story__friend p{
+    color:#FFFFFF;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: normal; 
+    font-size: 12px;
+    line-height: 14px;
+}
+
+hr{    
+    border: none;
+    background-color:  rgba(38, 38, 38, 1);
+    color:  rgba(38, 38, 38, 1);
+    height: 1px;
+}
+
+/* Блок - профиль, который поделился картинкой, с указанием локации */
+
+.user_and_location{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 355px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#FFFFFF;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.user_and_location__profil{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: url(img/Post/Profil.png);
+}
+
+.user_and_location__text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;    
+}
+
+.user_and_location__text img{
+    padding-left: 220px;   
+}
+
+/* Блок - Фотография, с галереей */
+
+.publish{
+    position: relative;
+    margin-top: 10px;
+    width: 375px;
+    height: 339px;
+    background: url(img/Post/Photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.publish img{
+    position: absolute;
+    top: 10px;
+    left: 326px;
+} 
+
+.publish p{
+    position: absolute;
+    color:#FFFFFF;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: normal;
+    font-size: 12px;    
+    right: 25px;
+    top:5px;
+} 
+
+/* Блок с отметками: лайк, директ, комментарий, а также галерея событий */
+
+.like_bar{
+    width: 353px;
+    height: 23px;
+    margin-left: 12px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like_bar__left img{
+    margin-right: 10px;
+}
+
+.like_bar__center{
+    padding-right: 80px;
+}
+
+
+/* Блок - Отметка друзей, которые поставили лайк и подпись автора фотографии */
+
+.commit{
+    margin-left: 12px;
+    margin-top: 15px; 
+    height: 52px;
+    width: 353px;
+    color:rgba(255, 255, 255, 1);
+    font-family: 'SF Pro Text', sans-serif;    
+    font-weight: 100;
+    font-size: 13.5px;
+    line-height: 16px;
+    letter-spacing: -0.225px;    
+}
+.commit p{
+    margin: 0;
+}
+
+.commit img{
+    float:left;
+    margin-right:5px ;
+}
+
+/* Блок - навигация по иг */
+
+.nav_bar{
+    margin-top: 12px;
+}
+
+.nav_bar__top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_bar__profil{
+    height: 30px;
+    width: 24px;
+    position: relative;
+} 
+
+.nav_bar__profil img:first-child{
+    position: absolute;
+    top: 5px;;
+    left:0;
+}
+
+.nav_bar__profil img:nth-child(2){
+    position: absolute;
+    top:100%;
+    left:10px;
+}
+
+.nav_bar hr{
+    width: 135px;
+    height: 5px;
+    border-radius: 100px;    
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 30px;
+    margin-left: 120px;    
+}
+
+/* Блок, идущий поверх остальной страницы */
+
+.notification{
+    position: absolute;
+    width: 142px;
+    height: 60px;    
+    z-index: 10;
+    top:0;
+    left: 50%;
+}
+
+.notification__oval{       
+    margin-top: 83px;
+    margin-left: 94px;    
+} 
+
+.notification div{ 
+    position: relative;    
+    left: 25px; 
+    width: 135px;  
+    height: 50px;
+    background-image: url(svg/Notification/Rectangle_red.svg); 
+    display: flex;  
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.notification__rectangle img:first-child{
+    margin-left: 12px;
+}
+
+.notification__rectangle img{
+    margin-top: 5px;
+}
+
