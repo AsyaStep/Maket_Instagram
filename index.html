@@ -13,13 +13,13 @@
 </head>
 
 <body>
-    <div class=" container">
-        <section class="header">
+    <div class="container"> <!-- Правильно. Сперва взяла весь основной блок и обернула в тег с классом container. Хорошо сделала с overflow: hidden чтобы рисунок кота не выходил за рамки )) -->
+        <section class="header"> <!-- Правильно. Делаешь все по семантике (назвала тег section и дала название классу header). Орининально сделал с пэдингами по краям. Дала разные отступы -->
             <div class="header__left">
                 <p>9:41</p>
             </div>
             <div class="header__right">
-                <img src="svg/Top_Section/Connection.svg" alt="Здесь нарисован знак сотовой связи">
+                <img src="svg/Top_Section/Connection.svg" alt="Здесь нарисован знак сотовой связи">. <!--  Правильно. В alt не забыла написать слова, если вдруг картинки не откроются -->
                 <img src="svg/Top_Section/Wifi.svg" alt="Здесь нарисован знак wi-fi">
                 <img src="svg/Top_Section/Battery.svg" alt="Здесь нарисован знак батареи">
             </div>
@@ -39,7 +39,7 @@
         <section class="story">
             <div class="story__friend">
                 <img src="img/Story/Avatar_you.png" alt="Здесь нарисован твой мини аватар">
-                <img src="svg/Story/Add story.svg" alt="Здесь нарисован знак добавить сториз"><br>
+                <img src="svg/Story/Add story.svg" alt="Здесь нарисован знак добавить сториз"><br>    <!-- задавать top: 56px; left: 56px;  можно, но не желательно. Такие большие отступы не желательны для: top, right, bottom, left. -->
                 <p>Your story</p>
             </div>
             <div class="story__friend">
@@ -65,18 +65,18 @@
             </div>
         </section>
 
-        <hr style="margin-top: 20px;">
+        <hr style="margin-top: 20px;"> <!-- margin-top: 20px можно было вынести в style.css )) -->
 
         <section class="user_and_location">
             <div class="user_and_location__profil"></div>
-            <div class="user_and_location__text">
+            <div class="user_and_location__text">     <!-- Здесь дай этому блоку стопроцентную ширину width: 100% и  margin-left; 10px; -->
                 <p>pieroborgo<br><span style="font-size: 11,5px">Florence, Italy</span></p>
-                <img src="svg/Post/More.svg" alt="Здесь нарисован знак многоточия">
+                <img src="svg/Post/More.svg" alt="Здесь нарисован знак многоточия">.  <!-- А здесь убери(полностью) padding-left: 220px; Такие большие отступы нельзя задавать -->
             </div>
         </section>
 
-        <section class="publish">
-            <img src="svg/Post/Number.svg">
+        <section class="publish">.    <!-- Так как ты задала для картинки высоту 339 пикселей, то в таких свойствах как width; background-size; background-repeat; нету смысла. Все итак будет работать (только в твоем случае. в твоем макете). А так ты правильно делаешь, что указываешь эти свйоства. Хорошая работа -->
+            <img src="svg/Post/Number.svg"> <!-- убери left: 326px; лучше напиши right: 16px; -->
             <p>1/2</p>
         </section>
 
@@ -118,7 +118,7 @@
             <hr>
         </section>
 
-        <section class="notification">
+        <section class="notification">       <!-- Notification более близко стоит к правому краю. Лучше убери left: 50% и поставь right: 52px. Убери еще (width: 142px; height: 60px; z-index: 10;) если поставишь right: 52px;  -->
             <img class="notification__oval" src="svg/Notification/Oval_red.svg">
             <div class="notification__rectangle">
                 <img src="svg/Notification/Likes.svg" alt="Здесь нарисован знак лайк">
